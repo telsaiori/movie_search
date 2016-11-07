@@ -15,6 +15,7 @@ body {
   margin: 0;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -46,7 +47,6 @@ input:focus {
 }
 
 button {
-  width: 40px;
   height: 35px;
   border: 0;
   background: none;
