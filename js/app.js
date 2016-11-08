@@ -10,23 +10,6 @@ $(document).ready(function(){
        getJson();
     }); // keyup end
     
-    $('.main-title').click(function(e){
-        alert('hi');
-        var $title = $(this).attr('class');
-        var $year = $('#year').val();
-        var url = "https://www.omdbapi.com/?";
-        var data = {
-          t: $title,
-          y: $year,
-          plot: "full",
-          r: "json"
-        };
-        $.ajax({
-            url: url,
-            data: data,
-            success: getMovie
-        });
-    }); //click end
     
     function getJson(){
        var $title = $('#search').val();
